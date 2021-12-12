@@ -1,0 +1,9 @@
+/.vscode
+/.git
+node_modules
+build
+/app/Scripts/engine/dapiBundle.js
+/app/Scripts/engine/howler.min.js
+/app/Scripts/engine/nucleo.min.js
+/app/Scripts/engine/logger.js
+/app/Scripts/engine/pixi-spine.js
