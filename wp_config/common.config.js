@@ -15,7 +15,19 @@ module.exports = {
       },
       {
         test: /\.(s[ac]ss|css)$/,
-        use: [`style-loader`, `css-loader`, `postcss-loader`, `sass-loader`],
+        use: [
+          { loader: `style-loader` },
+          { loader: `css-loader` },
+          {
+            loader: `postcss-loader`,
+            options: {
+              postcssOptions: {
+                config: `wp_config/postcss.config.js`,
+              },
+            },
+          },
+          { loader: `sass-loader` },
+        ],
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
